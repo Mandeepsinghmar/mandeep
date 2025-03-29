@@ -1,15 +1,13 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 
 export default function Home() {
   return (
     <div
-      className={`min-h-screen bg-[#FEFCF7] text-[#1a1a1a] ${GeistMono.className}`}
+      className={`min-h-screen bg-[#FEFCF7] text-[#1a1a1a] ${GeistMono.className} pt-4`}
     >
       {/* Hero Section */}
-      <header className='container mx-auto px-4 py-18 max-w-4xl'>
+      <header className='container mx-auto px-4 py-12 max-w-4xl'>
         <div className='flex flex-col gap-10'>
           <div className='flex items-center gap-8'>
             <div className='w-28 h-28 rounded-2xl bg-gradient-to-r from-violet-600 to-indigo-600 flex items-center justify-center text-3xl font-bold text-white shadow-lg shadow-violet-600/20'>
@@ -24,22 +22,19 @@ export default function Home() {
           </div>
           <div className='space-y-6 max-w-3xl'>
             <p className='text-gray-700 text-lg leading-relaxed'>
-              Hello! I'm a developer from India with 3+ years of experience in
-              building exceptional digital experiences. I specialize in frontend
-              development with React/Next.js and have worked remotely with
-              companies across the USA, Canada, and Europe.
+              I'm a developer with 3+ years of experience in building MVPs,
+              landing pages, multi-page websites, and SaaS solutions. I have
+              worked remotely with companies across the USA, Canada, and Europe.
             </p>
             <p className='text-gray-700 text-lg leading-relaxed'>
               I've delivered multiple successful projects, focusing on creating
-              performant and beautiful user interfaces. When not coding, I enjoy
-              exploring new technologies and contributing to the developer
-              community. Hey, I'm Sanidhya, a full-stack developer specializing
-              in building MVPs, landing pages, multi-page websites, and SaaS
-              solutions. I thrive on transforming complex ideas into seamless
-              web applications and am always eager to learn and tackle new
-              challenges. With a strong commitment to delivering high-quality
-              work, I ensure that projects are completed efficiently and
-              effectively. So basically, I can get work done :)
+              performant and beautiful user interfaces, I thrive on transforming
+              complex ideas into seamless web applications.
+            </p>
+            <p className='text-gray-700  text-lg leading-relaxed'>
+              I'm always eager to learn and take on new challenges. Committed to
+              high-quality work, I ensure projects are completed smoothly and
+              efficiently. Simply put, I get things done.
             </p>
             <p className='text-gray-700 text-lg leading-relaxed'>
               Available for work, freelance projects, and collaborations.{' '}
@@ -65,34 +60,38 @@ export default function Home() {
       {/* Work Experience */}
       <section className='py-12 '>
         <div className='container mx-auto px-4 max-w-4xl'>
-          <h2 className='text-2xl font-bold mb-6 text-black'>
-            Work Experience
-          </h2>
+          <h2 className='text-2xl font-bold mb-6 text-black'>Work</h2>
           <div className='space-y-6'>
             <ExperienceCard
-              title='Frontend Developer'
+              title='Frontend developer'
               company='Softhesis Labs'
-              date='June 2023 - Present'
+              date='June 2023 - Feb 2025'
+              link='https://tryfinancially.com/'
               description='Leading frontend development for a financial platform, implementing modern UI components and complex data visualizations.'
             />
             <ExperienceCard
-              title='Frontend engineer'
+              title='Frontend developer'
               company='JavaScript Mastery'
               date='Aug 2021 - Feb 2023'
               description='Designed and developed 20+ projects that helped
  millions of students to learn web technologies.'
+              link='https://www.jsmastery.pro/'
             />
             <ExperienceCard
-              title='Frontend Developer'
-              company='The Eagle3Dstreaming'
+              title='Frontend developer'
+              company='Eagle 3D Streaming'
               date='March 2022 - Nov 2022'
-              description='Developed and maintained the frontend architecture for 3D streaming platform.'
+              link='https://www.eagle3dstreaming.com/'
+              description='Implemented frontend solutions
+based on client requirements and built a new Control
+Panel from scratch for 3D streaming.'
             />
             <ExperienceCard
-              title='Frontend Developer'
-              company='Examine.com'
+              title='Frontend developer'
+              company='Examine'
               date='July 2022 - Oct 2022'
-              description='Developed and maintained the frontend architecture for a health and nutrition platform.'
+              link='https://examine.com'
+              description='Worked as an freelancer for examine, building a modern and user-friendly interface for accessing health and nutrition information.'
             />
           </div>
         </div>
@@ -160,7 +159,7 @@ export default function Home() {
               title='More projects'
               description='Built over 20+ educational projects for JavaScript Mastery, helping thousands of students learn modern web development technologies.'
               tech={['React', 'Node.js', 'MongoDB', 'Express', 'etc.']}
-              link='https://www.youtube.com/playlist?list=PL6QREj8te1P6wX9m5KnicnDVEucbOPsqR'
+              link='https://www.jsmastery.pro/'
             />
           </div>
         </div>
@@ -234,10 +233,16 @@ function ProjectCard({ title, description, tech, link, github }) {
   );
 }
 
-function ExperienceCard({ title, company, date, description }) {
+function ExperienceCard({ title, company, date, description, link }) {
   return (
-    <div className='p-6  rounded-xl border border-gray-100 hover:shadow-lg hover:shadow-violet-600/10 hover:bg-[#f5f5f2] group transition-all'>
-      <h3 className='text-xl font-bold text-gray-900'>{company}</h3>
+    <div className='p-6  rounded-xl border border-gray-100 group hover:shadow-lg hover:shadow-violet-600/10 hover:bg-[#f5f5f2] group transition-all'>
+      <Link
+        href={link}
+        target='_blank'
+        className='text-xl font-bold text-gray-900 group-hover:underline cursor-pointer'
+      >
+        {company}
+      </Link>
       <p className='text-gray-700 mt-1'>{title}</p>
       <p className='text-sm text-gray-500 mt-1'>{date}</p>
       <p className='mt-4 text-gray-600 leading-relaxed'>{description}</p>
