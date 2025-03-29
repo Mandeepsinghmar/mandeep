@@ -10,33 +10,33 @@ export default function Home() {
       <header className='container mx-auto px-4 py-12 max-w-4xl'>
         <div className='flex flex-col gap-10'>
           <div className='flex items-center gap-8'>
-            <div className='w-28 h-28 rounded-2xl bg-gradient-to-r from-violet-600 to-indigo-600 flex items-center justify-center text-3xl font-bold text-white shadow-lg shadow-violet-600/20'>
+            <div className='w-24 h-24 rounded-2xl bg-gradient-to-r from-violet-600 to-indigo-600 flex items-center justify-center text-2xl font-bold text-white shadow-lg shadow-violet-600/20'>
               MS
             </div>
             <div>
-              <h1 className='text-4xl font-bold mb-3 text-black bg-clip-text '>
+              <h1 className='text-3xl font-bold mb-3 text-black bg-clip-text '>
                 Mandeep Singhmar
               </h1>
-              <p className='text-gray-600 text-lg'>Frontend Developer</p>
+              <p className='text-gray-600 text-base'>Frontend Developer</p>
             </div>
           </div>
           <div className='space-y-6 max-w-3xl'>
-            <p className='text-gray-700 text-lg leading-relaxed'>
+            <p className='text-gray-700 text-base leading-relaxed'>
               I'm a developer with 3+ years of experience in building MVPs,
               landing pages, multi-page websites, and SaaS solutions. I have
               worked remotely with companies across the USA, Canada, and Europe.
             </p>
-            <p className='text-gray-700 text-lg leading-relaxed'>
+            <p className='text-gray-700 text-base leading-relaxed'>
               I've delivered multiple successful projects, focusing on creating
               performant and beautiful user interfaces, I thrive on transforming
               complex ideas into seamless web applications.
             </p>
-            <p className='text-gray-700  text-lg leading-relaxed'>
+            <p className='text-gray-700  text-base leading-relaxed'>
               I'm always eager to learn and take on new challenges. Committed to
               high-quality work, I ensure projects are completed smoothly and
               efficiently. Simply put, I get things done.
             </p>
-            <p className='text-gray-700 text-lg leading-relaxed'>
+            <p className='text-gray-700 text-base leading-relaxed'>
               Available for work, freelance projects, and collaborations.{' '}
               <Link
                 href='mailto:msingh8328@gmail.com'
@@ -60,7 +60,7 @@ export default function Home() {
       {/* Work Experience */}
       <section className='py-12 '>
         <div className='container mx-auto px-4 max-w-4xl'>
-          <h2 className='text-2xl font-bold mb-6 text-black'>Work</h2>
+          <h2 className='text-xl font-bold mb-6 text-black'>Work</h2>
           <div className='space-y-6'>
             <ExperienceCard
               title='Frontend developer'
@@ -100,7 +100,7 @@ Panel from scratch for 3D streaming.'
       {/* Tools & Skills */}
       <section className='py-12 '>
         <div className='container mx-auto px-4 max-w-4xl'>
-          <h2 className='text-2xl font-bold mb-6 text-black'>
+          <h2 className='text-xl font-bold mb-6 text-black'>
             Tools & technologies
           </h2>
           <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
@@ -122,7 +122,7 @@ Panel from scratch for 3D streaming.'
                 key={tool}
                 className='p-4  rounded-xl text-center hover:bg-[#f5f5f2] transition-all hover:shadow-lg hover:shadow-violet-600/5 border border-gray-100'
               >
-                <span className='text-gray-600 text-sm'>{tool}</span>
+                <span className='text-gray-600 text-xs'>{tool}</span>
               </div>
             ))}
           </div>
@@ -132,7 +132,7 @@ Panel from scratch for 3D streaming.'
       {/* Featured Projects */}
       <section className='py-12'>
         <div className='container mx-auto px-4 max-w-4xl'>
-          <h2 className='text-2xl font-bold mb-6 text-black'>Projects</h2>
+          <h2 className='text-xl font-bold mb-6 text-black'>Projects</h2>
           <div className='grid md:grid-cols-2 gap-6'>
             <ProjectCard
               title='Lyriks'
@@ -168,7 +168,7 @@ Panel from scratch for 3D streaming.'
       {/* Contact */}
       <section className='pt-8 pb-48'>
         <div className='container mx-auto px- max-w-4xl '>
-          <h2 className='text-2xl font-bold mb-4 text-black'>Reach me on</h2>
+          <h2 className='text-xl font-bold mb-4 text-black'>Reach me on</h2>
 
           <div className='flex items-center'>
             <div className='flex justify-center gap-8'>
@@ -197,13 +197,15 @@ Panel from scratch for 3D streaming.'
 function ProjectCard({ title, description, tech, link, github }) {
   return (
     <div className='p-6  rounded-xl hover:bg-[#f5f5f2] transition-all hover:shadow-lg hover:shadow-violet-600/10 border border-gray-100 '>
-      <h3 className='text-xl font-bold mb-3 text-gray-900'>{title}</h3>
-      <p className='text-gray-600 mb-4 leading-relaxed'>{description}</p>
+      <h3 className='text-lg font-bold mb-3 text-gray-900'>{title}</h3>
+      <p className='text-gray-600 mb-4 leading-relaxed text-sm'>
+        {description}
+      </p>
       <div className='flex flex-wrap gap-2 mb-4'>
         {tech.map((item) => (
           <span
             key={item}
-            className={`px-3 py-1 bg-[#ebebeb] rounded-full text-sm text-gray-600 border border-gray-100 ${GeistMono.className}`}
+            className={`px-3 py-1 bg-[#ebebeb] rounded-full text-xs text-gray-600 border border-gray-100 ${GeistMono.className}`}
           >
             {item}
           </span>
@@ -243,9 +245,11 @@ function ExperienceCard({ title, company, date, description, link }) {
       >
         {company}
       </Link>
-      <p className='text-gray-700 mt-1'>{title}</p>
-      <p className='text-sm text-gray-500 mt-1'>{date}</p>
-      <p className='mt-4 text-gray-600 leading-relaxed'>{description}</p>
+      <p className='text-gray-700 mt-1 text-sm'>{title}</p>
+      <p className='text-xs text-gray-500 mt-1'>{date}</p>
+      <p className='mt-4 text-gray-600 leading-relaxed text-sm'>
+        {description}
+      </p>
     </div>
   );
 }
