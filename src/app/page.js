@@ -183,7 +183,7 @@ Panel from scratch for 3D streaming.'
               <SocialLink href='https://x.com/mandeep_singh_9' label='x' />
               <SocialLink href='mailto:msingh8328@gmail.com' label='email' />
               <SocialLink
-                href='https://drive.google.com/file/d/1Nadw3zINPVSSKKQjRLMrORtnT62wFUaC/view?usp=sharing'
+                href='https://drive.google.com/file/d/1Nadw3zINPVSSKKQjRLMrORtnT62wFUaC/view'
                 label='resume'
               />
             </div>
