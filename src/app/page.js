@@ -246,7 +246,7 @@ function ExperienceCard({ title, company, date, description, link }) {
         {company}
       </Link>
       <p className='text-gray-700 mt-1 text-sm'>{title}</p>
-      <p className='text-xs text-gray-500 mt-1'>{date}</p>
+      {/* <p className='text-xs text-gray-500 mt-1'>{date}</p> */}
       <p className='mt-4 text-gray-600 leading-relaxed text-sm'>
         {description}
       </p>
