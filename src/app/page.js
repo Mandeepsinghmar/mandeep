@@ -134,13 +134,13 @@ Panel from scratch for 3D streaming.'
         <div className='container mx-auto px-4 max-w-4xl'>
           <h2 className='text-xl font-bold mb-6 text-black'>Projects</h2>
           <div className='grid md:grid-cols-2 gap-6'>
-            <ProjectCard
+            {/* <ProjectCard
               title='Lyriks'
               description='Lyriks is a modern music streaming web application that allows users to explore and play their favorite songs with an intuitive and engaging user interface.'
               tech={['React', 'Tailwind CSS', 'Redux']}
               link='https://lyriks.vercel.app'
               github='https://github.com/Mandeepsinghmar/lyriks/tree/main'
-            />
+            /> */}
 
             <ProjectCard
               title='Tiktik'
