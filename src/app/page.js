@@ -167,7 +167,7 @@ Panel from scratch for 3D streaming.'
 
       {/* Contact */}
       <section className='pt-8 pb-48'>
-        <div className='container mx-auto px- max-w-4xl '>
+        <div className='container mx-auto px-4 max-w-4xl '>
           <h2 className='text-xl font-bold mb-4 text-black'>Reach me on</h2>
 
           <div className='flex items-center'>
