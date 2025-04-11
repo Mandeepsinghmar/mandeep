@@ -150,10 +150,10 @@ Panel from scratch for 3D streaming.'
               github='https://github.com/Mandeepsinghmar/tiktok-clone'
             />
             <ProjectCard
-              title='Examine'
-              description='Led the frontend development for Examine.com, building a modern and user-friendly interface for accessing health and nutrition information.'
-              tech={['Next.js', 'Tailwind CSS', 'Redux']}
-              link='https://examine.com'
+              title='Phanox'
+              description='Phanox is an ecommerce app to shop for headphones and speakers.'
+              tech={['Next.js', 'Sanity.io', 'Stripe', 'ESLint']}
+              link='https://phanox.vercel.app/'
             />
             <ProjectCard
               title='More projects'
@@ -183,7 +183,7 @@ Panel from scratch for 3D streaming.'
               <SocialLink href='https://x.com/mandeep_singh_9' label='x' />
               <SocialLink href='mailto:msingh8328@gmail.com' label='email' />
               <SocialLink
-                href='https://drive.google.com/file/d/1Nadw3zINPVSSKKQjRLMrORtnT62wFUaC/view'
+                href='https://drive.google.com/file/d/18UWmMwvNgJEEICyg8S8o_XmnCztcny1D/view'
                 label='resume'
               />
             </div>
