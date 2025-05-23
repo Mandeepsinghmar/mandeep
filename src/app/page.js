@@ -17,7 +17,7 @@ export default function Home() {
               <h1 className='text-3xl font-bold mb-3 text-black bg-clip-text '>
                 Mandeep Singhmar
               </h1>
-              <p className='text-gray-600 text-base'>Frontend Developer</p>
+              <p className='text-gray-600 text-base'>Full Stack Engineer</p>
             </div>
           </div>
           <div className='space-y-6 max-w-3xl'>
@@ -70,7 +70,7 @@ export default function Home() {
               description='Leading frontend development for a financial platform, implementing modern UI components and complex data visualizations.'
             />
             <ExperienceCard
-              title='Frontend developer'
+              title='Full stack developer'
               company='JavaScript Mastery'
               date='Aug 2021 - Feb 2023'
               description='Designed and developed 20+ projects that helped
@@ -106,21 +106,29 @@ Panel from scratch for 3D streaming.'
           <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
             {[
               'React',
-              'Next.js',
+              'Next.js App Router',
               'TypeScript',
               'JavaScript',
               'Tailwind CSS',
+              'tRPC',
+              'next-auth',
+              'prisma',
+              'Shadcn',
               'Node.js',
               'Express',
               'Redux',
+              'Recoil',
               'MERN',
               'Material-UI',
               'Firebase',
+              'Supabase',
               'Git',
+              'zod',
+              'Vitest, Jest',
             ].map((tool) => (
               <div
                 key={tool}
-                className='p-4  rounded-xl text-center hover:bg-[#f5f5f2] transition-all hover:shadow-lg hover:shadow-violet-600/5 border border-gray-100'
+                className='p-2  rounded-xl text-center hover:bg-[#f5f5f2] transition-all hover:shadow-lg hover:shadow-violet-600/5 border border-gray-100'
               >
                 <span className='text-gray-600 text-xs'>{tool}</span>
               </div>
@@ -137,7 +145,7 @@ Panel from scratch for 3D streaming.'
             <ProjectCard
               title='Lyriks'
               description='Lyriks is a modern music streaming web application that allows users to explore and play their favorite songs with an intuitive and engaging user interface.'
-              tech={['React', 'Tailwind CSS', 'Redux']}
+              tech={['React', 'Tailwind CSS', 'Redux-toolkit', 'Vite']}
               link='https://lyriks.vercel.app'
               github='https://github.com/Mandeepsinghmar/lyriks/tree/main'
             />
@@ -145,7 +153,15 @@ Panel from scratch for 3D streaming.'
             <ProjectCard
               title='Tiktik'
               description='A TikTok-like social media application built using Next.js, React, zustand and Sanity as the backend.'
-              tech={['Next.js', 'Tailwind CSS', 'Redux', 'Typescript']}
+              tech={[
+                'Next.js',
+                'Tailwind CSS',
+                'Redux',
+                'Typescript',
+                'Sanity',
+                'Zustand',
+                'Multer',
+              ]}
               link='https://tiktok-jsm.vercel.app/'
               github='https://github.com/Mandeepsinghmar/tiktok-clone'
             />
@@ -154,11 +170,19 @@ Panel from scratch for 3D streaming.'
               description='Phanox is an ecommerce app to shop for headphones and speakers.'
               tech={['Next.js', 'Sanity.io', 'Stripe', 'ESLint']}
               link='https://phanox.vercel.app/'
+              github='https://github.com/Mandeepsinghmar/phanox'
             />
             <ProjectCard
               title='More projects'
-              description='Built over 20+ educational projects for JavaScript Mastery, helping thousands of students learn modern web development technologies.'
-              tech={['React', 'Node.js', 'MongoDB', 'Express', 'etc.']}
+              description='Built over 20+ projects for JavaScript Mastery, helping thousands of students learn modern web development technologies.'
+              tech={[
+                'Next.js',
+                'MERN',
+                'tRPC',
+                'PostgreSQL',
+                'Tailwind CSS',
+                'etc.',
+              ]}
               link='https://www.jsmastery.pro/'
             />
           </div>
@@ -171,7 +195,7 @@ Panel from scratch for 3D streaming.'
           <h2 className='text-xl font-bold mb-4 text-black'>Reach me on</h2>
 
           <div className='flex items-center'>
-            <div className='flex justify-center gap-8'>
+            <div className='flex justify-center gap-8 flex-wrap items-center'>
               <SocialLink
                 href='https://github.com/Mandeepsinghmar'
                 label='github'
